@@ -1,6 +1,7 @@
 """
 @ 10-01-2023 modified by mdoodm
-+ cleaned up codebase
+Edit #1
++ removed offline environment testing on line 19
 
 """
 import requests,json
@@ -16,6 +17,5 @@ def get_email(user):
         except Exception as e: # need to address this at a later date
             print(end='') # clean up if it can't find any email attached to the repository
             
-if __name__ == __main__:
-    user = str(input('Github Username\n:')) # enforcing string
-    get_email(user)
+user = str(input('Github Username\n:')) # enforcing string
+get_email(user)
